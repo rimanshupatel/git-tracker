@@ -5,8 +5,15 @@
 
 body {
   font-family: "Space Mono", monospace;
+  background-color: #f6f8ff;
 }
 
 .MainColor {
   color: rgb(75, 106, 155);
+}
+
+.MainShadow {
+  background-color: rgb(254, 254, 254);
+  box-shadow: rgba(70, 96, 187, 0.2) 0px 16px 30px;
+  border-radius: 10px;
 }

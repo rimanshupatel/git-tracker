@@ -1,5 +1,5 @@
 import { ChangeEvent, Dispatch, FormEvent, SetStateAction } from "react";
-
+import { MagnifyingGlass } from "phosphor-react";
 interface searchProps {
   setUserName: Dispatch<SetStateAction<string>>;
   userName: string;
@@ -11,15 +11,21 @@ export const SearchBar = ({
   handleSubmit,
 }: searchProps) => {
   return (
-    <form onSubmit={(e: FormEvent) => e.preventDefault()}>
+    <form
+      onSubmit={(e: FormEvent) => e.preventDefault()}
+      className="pt-2 w-full"
+    >
       <div>
-        <div className="pt-2">
-          <div className="flex justify-center py-5">
-            <h2 className="text-3xl font-bold">
-              git <span className="text-green-500">Tracker</span>
-            </h2>
-          </div>
-          <div className="flex justify-center items-center gap-3">
+        <div className=" py-5 ">
+          <h2 className="text-3xl font-bold">
+            git <span className="text-green-500">Tracker</span>
+          </h2>
+        </div>
+        <div className="flex justify-between  h-[70px] w-full gap-3 MainShadow p-1">
+          <div className="flex items-center ml-4">
+            <span className="text-xl">
+              <MagnifyingGlass />
+            </span>
             <input
               type="text"
               value={userName}
@@ -27,16 +33,16 @@ export const SearchBar = ({
                 setUserName(e.target.value)
               }
               placeholder="Enter your Github Username"
-              className="p-3 w-1/2 rounded-lg border hover:border hover:border-indigo-950 transition"
+              className="p-3 w-96 text-lg bg-transparent outline-none transition delay-150"
             />
-            <button
-              type="button"
-              onClick={handleSubmit}
-              className="flex py-3 px-6 tracking-wide rounded-lg bg-indigo-950 text-white font-semibold"
-            >
-              Search
-            </button>
           </div>
+          <button
+            type="button"
+            onClick={handleSubmit}
+            className=" py-1 px-5 m-1 tracking-[.05em] rounded-lg bg-indigo-950 text-white font-semibold"
+          >
+            Search
+          </button>
         </div>
       </div>
     </form>
