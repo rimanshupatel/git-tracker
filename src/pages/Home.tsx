@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { SearchBar } from "../components/SearchBar";
 import { UserCard } from "../components/UserCard";
+import Header from "../components/Header";
 export interface userData {
   id: string;
   login: string;
@@ -68,6 +69,7 @@ export const Home = () => {
 
   return (
     <>
+      <Header />
       <SearchBar
         userName={userName}
         setUserName={setUserName}
