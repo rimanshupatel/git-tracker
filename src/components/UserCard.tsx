@@ -1,4 +1,6 @@
-import { TwitterLogo, MapPin, Buildings, Link } from "phosphor-react";
+import { Link } from "react-router-dom";
+import { TwitterLogo, MapPin, Buildings } from "phosphor-react";
+import { FiLink } from "react-icons/fi";
 import { userData } from "../pages/Home";
 interface cardProps {
   user: userData | null;
@@ -100,7 +102,7 @@ export const UserCard = ({ user }: cardProps) => {
                     target="_blank"
                   >
                     <span>
-                      <Link />
+                      <FiLink />
                     </span>
                     <h5 className="ml-2">{user.blog} </h5>
                   </a>
@@ -108,7 +110,7 @@ export const UserCard = ({ user }: cardProps) => {
               ) : (
                 <div className="py-2 px-4 flex items-center MainColor w-[250px]">
                   <span>
-                    <Link />
+                    <FiLink />
                   </span>
                   <span className="ml-2">not found</span>
                 </div>
@@ -130,12 +132,12 @@ export const UserCard = ({ user }: cardProps) => {
               )}
             </div>
             <div className="flex  mt-4 md:mt-6 ">
-              <a
-                href="#"
+              <Link
+                to={`https://github.com/${user?.login}`}
                 className="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#232122] rounded-md"
               >
                 follow
-              </a>
+              </Link>
 
               <a
                 href={`https://github.com/${user?.login}?tab=repositories`}
