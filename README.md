@@ -1,30 +1,26 @@
-# React + TypeScript + Vite
+<h1 align="center">Github User Search</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description 
+This project is a web application that provides a brief demonstration of using the GitHub User API, with a focus on simplicity and efficiency. It was developed using react-ts  The main objective was to enhance knowledge in APIs, TypeScript, interfaces, and types in programming.
 
-Currently, two official plugins are available:
+## live link 
+### [Git tracker](https://gittrackersite.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Built With
+|React.JS|GitHub API||
+|---|---|---|
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Dependencies Used
+```
+npm i axios
+npm i react-icons
+npm i react-router-dom
+```
+## URL
+```
+https://gittrackersite.netlify.app/
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+<h3 align="center">Hope you like this application 🤩</h3>
+<h4 align="center">Show some ❤️ by ⭐ this repository</h4>
